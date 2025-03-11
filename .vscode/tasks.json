@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar SFML",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o", "${fileDirname}/program.exe",
+                "-I", "C:/SFML/include",
+                "-L", "C:/SFML/lib",
+                "-lsfml-graphics", "-lsfml-window", "-lsfml-system",
+                "-mwindows"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
